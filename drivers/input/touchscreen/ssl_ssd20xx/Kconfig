@@ -1,0 +1,11 @@
+#
+# Solomon Systech SSD20xx touchscreen driver configuration
+#
+config TOUCHSCREEN_SSL_SSD20xx
+	bool "Solomon Systech SSD20xx"
+	default n
+	help
+	  Say Y here if you have a Solomon Systech SSD20xx touchscreen connected
+	  to your system.
+
+	  If unsure, say N.
