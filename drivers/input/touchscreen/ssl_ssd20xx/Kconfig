@@ -1,11 +1,44 @@
 #
 # Solomon Systech SSD20xx touchscreen driver configuration
 #
-config TOUCHSCREEN_SSL_SSD20xx
-	bool "Solomon Systech SSD20xx"
-	default n
+menuconfig TOUCHSCREEN_SSL_SSD20xx
+	bool "Solomon Systech SSD20xx touchscreen"
 	help
 	  Say Y here if you have a Solomon Systech SSD20xx touchscreen connected
+	  to your system.
+
+	  If unsure, say N.
+
+if TOUCHSCREEN_SSL_SSD20xx
+
+config TOUCHSCREEN_SSL_SSD20xx_DRIVER
+	tristate "SSD20xx driver"
+	help
+	  Say Y here to build support for Solomon Systech SSD20xx touchscreen
+	  driver.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called ssl_ssd20xx.
+
+config TOUCHSCREEN_SSL_SSD20xx_UPDATE
+	tristate "SSD20xx update"
+	help
+	  Say Y here to build support for Solomon Systech SSD20xx touchscreen
+	  update driver.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called ssd20xx_upgrade.
+
+endif # TOUCHSCREEN_SSL_SSD20xx
+
+config TOUCHSCREEN_SSD2098
+	bool "Solomon Systech SSD2098 touchscreen"
+	help
+	  Say Y here if you have a Solomon Systech SSD2098 touchscreen connected
 	  to your system.
 
 	  If unsure, say N.
