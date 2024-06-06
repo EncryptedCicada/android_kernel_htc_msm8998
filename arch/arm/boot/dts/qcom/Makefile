@@ -289,6 +289,11 @@ dtb-$(CONFIG_ARCH_SDM630) += sdm630-rumi.dtb \
 	sdm630-pm660a-headset-jacktype-no-cdp.dtb \
 	sdm630-pm660a-headset-jacktype-no-rcm.dtb
 
+# HTC sdm636 device dtbs (htc_iml)
+dtb-$(CONFIG_ARCH_SDM660) += \
+	sdm660-mtp-htc_iml.dtb \
+	sdm636-htc_iml.dtb
+
 # HTC msm8998 device dtbs
 dtb-$(CONFIG_ARCH_MSM8998) += \
 	msm8998-v2.1-htc_ocn-xa.dtb \

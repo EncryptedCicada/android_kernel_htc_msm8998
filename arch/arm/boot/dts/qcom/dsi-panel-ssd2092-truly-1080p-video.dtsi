@@ -1,0 +1,301 @@
+/* Copyright (c) 2017, The Linux Foundation. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 and
+ * only version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+
+&mdss_mdp {
+	dsi_ssd2092_truly_1080_video: qcom,mdss_dsi_ssd2092_truly_1080p_video {
+		qcom,mdss-dsi-panel-name = 
+                "truly ssd2092 1080p video mode dsi panel";
+		qcom,mdss-dsi-panel-controller = <&mdss_dsi0>;
+		qcom,mdss-dsi-panel-type = "dsi_video_mode";
+		qcom,mdss-dsi-panel-framerate = <60>;
+		qcom,mdss-dsi-virtual-channel-id = <0>;
+		qcom,mdss-dsi-stream = <0>;
+		qcom,mdss-dsi-panel-width = <1080>;
+		qcom,mdss-dsi-panel-height = <2160>;
+		qcom,mdss-dsi-h-front-porch = <120>;
+		qcom,mdss-dsi-h-back-porch = <20>;
+		qcom,mdss-dsi-h-pulse-width = <4>;
+		qcom,mdss-dsi-h-sync-skew = <0>;
+		qcom,mdss-dsi-v-back-porch = <43>;
+		qcom,mdss-dsi-v-front-porch = <76>;
+		qcom,mdss-dsi-v-pulse-width = <1>;
+		qcom,mdss-dsi-h-left-border = <0>;
+		qcom,mdss-dsi-h-right-border = <0>;
+		qcom,mdss-dsi-v-top-border = <0>;
+		qcom,mdss-dsi-v-bottom-border = <0>;
+		qcom,mdss-dsi-bpp = <24>;
+		qcom,mdss-dsi-underflow-color = <0xff>;
+		qcom,mdss-dsi-border-color = <0>;
+		qcom,mdss-dsi-h-sync-pulse = <0>;
+		qcom,mdss-dsi-traffic-mode = "non_burst_sync_pulse";
+		qcom,mdss-dsi-bllp-eof-power-mode;
+		qcom,mdss-dsi-bllp-power-mode;
+		qcom,mdss-dsi-lane-0-state;
+		qcom,mdss-dsi-lane-1-state;
+		qcom,mdss-dsi-lane-2-state;
+		qcom,mdss-dsi-lane-3-state;
+		qcom,mdss-dsi-panel-timings-phy-v2 = [25 20 09 0a 06 03 04 a0
+            25 20 09 0a 06 03 04 a0
+            25 20 09 0a 06 03 04 a0
+            25 20 09 0a 06 03 04 a0
+            25 1f 08 0a 06 03 04 a0];
+		qcom,mdss-dsi-t-clk-post = <0x0e>;
+		qcom,mdss-dsi-t-clk-pre = <0x35>;
+		qcom,mdss-dsi-dma-trigger = "trigger_sw";
+		qcom,mdss-dsi-mdp-trigger = "none";
+		qcom,mdss-dsi-on-command = [29 01 00 00 00 00 03 b5 00
+			00 29 01 00 00 00 00 03 b3
+			03 96 29 01 00 00 00 00 03
+			b4 21 ff 29 01 00 00 00 00
+            03 e1 00 00 29 01 00 00 00
+            00 04 e1 03 00 10 29 01 00
+            00 00 00 03 b0 04 01 29 01
+            00 00 00 00 03 b0 07 14 29
+            01 00 00 00 00 03 c6 04 2d
+            29 01 00 00 00 00 03 b9 0e
+            44 29 01 00 00 00 00 03 c1
+            0c 26 29 01 00 00 00 00 03
+            c1 08 99 29 01 00 00 00 00
+            03 b9 23 00 29 01 00 00 00
+            00 03 c2 04 0f 29 01 00 00
+            00 00 03 b9 11 22 29 01 00
+            00 00 00 03 b9 12 22 29 01
+            00 00 00 00 03 b9 13 22 29
+            01 00 00 00 00 03 b3 19 0b
+            29 01 00 00 00 00 03 b0 3d
+            c8 29 01 00 00 00 00 03 b3
+            0f 20 29 01 00 00 00 00 02
+            36 02 29 01 00 00 00 00 03
+            c7 01 09 29 01 00 00 00 00
+            03 b3 15 80 29 01 00 00 00
+            00 03 b3 1e 02 29 01 00 00
+            00 00 03 b3 14 c0 29 01 00
+            00 00 00 03 b3 16 50 29 01
+            00 00 00 00 03 b3 1c e4 29
+            01 00 00 00 00 03 b3 28 09
+            29 01 00 00 00 00 03 b3 24
+            19 29 01 00 00 00 00 03 b0
+            12 00 29 01 00 00 00 00 03
+            b0 13 14 29 01 00 00 00 00
+            03 b0 1a 00 29 01 00 00 00
+            00 03 b0 1b 14 29 01 00 00
+            00 00 03 c1 0d 87 29 01 00
+            00 00 00 03 c1 0e 87 29 01
+            00 00 00 00 17 c3 00 10 2e
+            3e 48 5e 6b 7a 83 97 a3 a8
+            a5 ac ad b5 c1 c4 4e 4f 59
+            5a 29 01 00 00 00 00 17 c3
+            15 10 2e 3e 48 5e 6b 7a 83
+            97 a3 a8 a5 ac ad b5 c1 c4
+            4e 4f 59 5a 29 01 00 00 00
+            00 03 bb 01 8a 29 01 00 00
+            00 00 03 bb 02 23 29 01 00
+            00 00 00 03 bb 03 bc 29 01
+            00 00 00 00 03 bb 04 c0 29
+            01 00 00 00 00 03 bb 05 19
+            29 01 00 00 00 00 03 bb 06
+            37 29 01 00 00 00 00 03 bb
+            07 ee 29 01 00 00 00 00 03
+            bb 08 dd 29 01 00 00 00 00
+            03 bb 09 cc 29 01 00 00 00
+            00 03 bb 0a 36 29 01 00 00
+            00 00 03 bb 0b 70 29 01 00
+            00 00 00 03 bb 0c 00 29 01
+            00 00 00 00 03 bb 0d 8a 29
+            01 00 00 00 00 03 bb 0e 23
+            29 01 00 00 00 00 03 bb 0f
+            bc 29 01 00 00 00 00 03 bb
+            10 c0 29 01 00 00 00 00 03
+            bb 11 18 29 01 00 00 00 00
+            03 bb 12 a7 29 01 00 00 00
+            00 03 bb 13 ee 29 01 00 00
+            00 00 03 bb 14 dd 29 01 00
+            00 00 00 03 bb 15 cc 29 01
+            00 00 00 00 03 bb 16 36 29
+            01 00 00 00 00 03 bb 17 70
+            29 01 00 00 00 00 03 bb 18
+            00 29 01 00 00 00 00 03 bb
+            31 01 29 01 00 00 00 00 03
+            bd 00 f0 29 01 00 00 00 00
+            03 bd 01 f0 29 01 00 00 00
+            00 03 bd 02 f0 29 01 00 00
+            00 00 03 bd 03 f0 29 01 00
+            00 00 00 03 bd 1a 02 29 01 
+            00 00 00 00 03 bd 1b 02 29
+            01 00 00 00 00 03 bd 1d 01
+            29 01 00 00 00 00 03 bd 1e
+            01 29 01 00 00 00 00 03 bd
+            21 00 29 01 00 00 00 00 03
+            bd 1f 79 29 01 00 00 00 00 
+            03 bd 20 14 29 01 00 00 00
+            00 03 bd 22 89 29 01 00 00
+            00 00 03 bd 23 13 29 01 00
+            00 00 00 03 bd 24 13 29 01
+            00 00 00 00 03 bd 26 01 29
+            01 00 00 00 00 03 bd 27 01
+            29 01 00 00 00 00 03 bd 2a
+            00 29 01 00 00 00 00 03 bd
+            28 79 29 01 00 00 00 00 03
+            bd 29 14 29 01 00 00 00 00
+            03 bd 2b 89 29 01 00 00 00
+            00 03 bd 2c 33 29 01 00 00
+            00 00 03 bd 2d 33 29 01 00
+            00 00 00 03 bd 2e 11 29 01
+            00 00 00 00 03 bd 2f 11 29
+            01 00 00 00 00 03 bd 31 22
+            29 01 00 00 00 00 03 bd 32
+            01 29 01 00 00 00 00 03 bd
+            33 04 29 01 00 00 00 00 03
+            bd 34 11 29 01 00 00 00 00
+            03 bd 35 11 29 01 00 00 00
+            00 03 bd 37 22 29 01 00 00
+            00 00 03 bd 38 01 29 01 00
+            00 00 00 03 bd 39 04 29 01
+            00 00 00 00 03 bd 3a 1e 29
+            01 00 00 00 00 03 bd 3b 1e
+            29 01 00 00 00 00 03 bd 3c
+            1e 29 01 00 00 00 00 03 bd
+            3d 1e 29 01 00 00 00 00 03
+            bd 40 aa 29 01 00 00 00 00
+            03 bd 42 1e 29 01 00 00 00
+            00 03 bd 43 1e 29 01 00 00
+            00 00 03 bd 44 1e 29 01 00
+            00 00 00 03 bd 45 1e 29 01
+            00 00 00 00 03 bd 48 aa 29
+            01 00 00 00 00 03 ba 02 05
+            29 01 00 00 00 00 03 ba 03
+            01 29 01 00 00 00 00 03 bc
+            1e 71 29 01 00 00 00 00 03
+            bc 24 83 29 01 00 00 00 00
+            03 b8 03 a9 29 01 00 00 00
+            00 03 ba 15 41 29 01 00 00
+            00 00 03 bb 19 8a 29 01 00
+            00 00 00 03 bb 1a 32 29 01
+            00 00 00 00 03 bb 1b bc 29
+            01 00 00 00 00 03 bb 1c c2
+            29 01 00 00 00 00 03 bb 1d
+            39 29 01 00 00 00 00 03 bb
+            1e 37 29 01 00 00 00 00 03
+            bb 1f ee 29 01 00 00 00 00
+            03 bb 20 dd 29 01 00 00 00
+            00 03 bb 21 cc 29 01 00 00
+            00 00 03 bb 22 36 29 01 00
+            00 00 00 03 bb 23 70 29 01
+            00 00 00 00 03 bb 24 00 29
+            01 00 00 00 00 03 bb 25 8a
+            29 01 00 00 00 00 03 bb 26
+            32 29 01 00 00 00 00 03 bb
+            27 bc 29 01 00 00 00 00 03
+            bb 28 c2 29 01 00 00 00 00
+            03 bb 29 38 29 01 00 00 00
+            00 03 bb 2a a7 29 01 00 00
+            00 00 03 bb 2b ee 29 01 00
+            00 00 00 03 bb 2c dd 29 01
+            00 00 00 00 03 bb 2d cc 29
+            01 00 00 00 00 03 bb 2e 36
+            29 01 00 00 00 00 03 bb 2f
+            70 29 01 00 00 00 00 03 bb
+            30 00 29 01 00 00 00 00 03
+            b8 15 a2 29 01 00 00 00 00
+            03 b0 39 00 29 01 00 00 00
+            00 04 c6 00 03 40 29 01 00
+            00 00 00 03 b3 18 00 29 01
+            00 00 00 00 03 ba 17 28 29
+            01 00 00 00 00 03 ba 23 15
+            29 01 00 00 00 00 03 b0 06
+            2c 29 01 00 00 00 00 03 ba
+            17 28 29 01 00 00 00 00 03
+            ba 23 15 29 01 00 00 00 00
+            03 ba 16 00 29 01 00 00 00
+            00 04 ba 28 02 02 29 01 00
+            00 00 00 03 ba 0f 8c 29 01
+            00 00 00 00 03 ba 10 0c 29
+            01 00 00 00 00 03 ba 11 23
+            29 01 00 00 00 00 05 ba 12
+            9d 9d 9d 29 01 00 00 00 00
+            03 ba 25 22 29 01 00 00 00
+            00 04 ba 0d 40 02 29 01 00
+            00 00 00 03 ba 2f 8c 29 01
+            00 00 00 00 03 c2 04 00 29
+            01 00 00 00 00 03 c2 05 c0
+            29 01 00 00 00 00 0b b9 11
+            00 00 00 00 00 00 00 00 00
+            29 01 00 00 00 00 03 ba 15
+            33 29 01 00 00 00 00 06 b9
+            00 5f 5f 61 0a 29 01 00 00
+            00 00 03 bd 08 07 29 01 00
+            00 00 00 03 bd 09 07 29 01
+            00 00 00 00 03 bc 03 00 29
+            01 00 00 00 00 03 bc 04 00
+            29 01 00 00 00 00 03 bc 05
+            00 29 01 00 00 00 00 03 bc
+            07 10 29 01 00 00 00 00 03
+            bc 08 10 29 01 00 00 00 00
+            03 bc 09 10 29 01 00 00 00
+            00 03 b9 11 00 29 01 00 00
+            00 00 03 b9 12 00 29 01 00
+            00 00 00 03 b9 13 00 29 01
+            00 00 00 00 03 b9 1d 00 29
+            01 00 00 00 00 03 b9 1e 00
+            29 01 00 00 00 00 03 b9 1f
+            00 29 01 00 00 00 00 03 c2
+            00 07 29 01 00 00 00 00 03
+            c1 0b 1f 29 01 00 00 00 00
+            03 b1 05 2f 29 01 00 00 00
+            00 02 35 00 29 01 00 00 00
+            00 04 b0 01 08 70 29 01 00
+            00 00 00 03 b9 25 a0 29 01
+            00 00 00 00 03 ba 2f cc 29
+            01 00 00 00 00 03 c1 02 b0
+            29 01 00 00 00 00 03 b3 1c
+            c4 29 01 00 00 00 00 03 b3
+            1d 80 29 01 00 00 00 00 04
+            bd 11 02 22 29 01 00 00 00
+            00 02 36 0a 05 01 00 00 14
+            00 02 11 00 05 01 00 00 32
+            00 02 29 00];
+		qcom,mdss-dsi-off-command = [05 01 00 00 32 00 02 28 00
+            05 01 00 00 78 00 02 10 00];
+		qcom,mdss-dsi-cabc-on-command = [15 01 00 00 00 00 02 ff 10
+            15 01 00 00 00 00 02 55 01];
+		qcom,mdss-dsi-cabc-off-command = [15 01 00 00 00 00 02 ff 10
+            15 01 00 00 00 00 02 55 00];
+		qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
+		qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+		qcom,mdss-dsi-cabc-on-command-state = "dsi_hs_mode";
+		qcom,mdss-dsi-cabc-off-command-state = "dsi_hs_mode";
+		qcom,esd-check-enabled;
+		qcom,mdss-dsi-panel-status-command = [05 fd ab 41 04 fc ac ea];
+		qcom,mdss-dsi-panel-status-command-mode = "dsi_lp_mode";
+
+        /* Remove as there is no support for it in the source */
+		/* qcom,mdss-dsi-panel-status-check-mode = "TE_check_NT35596"; */
+		
+        /* Replace with experimental alternative. Almost sure it won't work but meh :P */
+        qcom,mdss-dsi-panel-status-check-mode = "te_signal_check";
+		qcom,mdss-dsi-panel-status-read-length = <1>;
+		qcom,mdss-dsi-panel-status-value = <156>;
+		qcom,mdss-dsi-panel-max-error-count = <3>;
+		qcom,mdss-dsi-lane-map = "lane_map_0123";
+		qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
+		qcom,mdss-dsi-reset-sequence = <01 05>, <00 10>, <01 20>;
+		qcom,mdss-pan-physical-width-dimension = <67>;
+		qcom,mdss-pan-physical-height-dimension = <136>;
+		qcom,mdss-dsi-tx-eot-append;
+		qcom,mdss-dsi-post-init-delay = <1>;
+		qcom,mdss-dsi-min-refresh-rate = <48>;
+		qcom,mdss-dsi-max-refresh-rate = <60>;
+        qcom,mdss-dsi-bl-min-level = <1>;
+        qcom,mdss-dsi-bl-max-level = <4095>;
+        qcom,panel-supply-entries = <&dsi_panel_pwr_supply>;
+	};
+};
